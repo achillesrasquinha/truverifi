@@ -1,7 +1,5 @@
 <div align="center">
-    <h1>
-        truverifi
-    </h1>
+    <img src="https://app.truverifi.com/img/truverifi-logo.png" width="250">
     <h4>Python client library for truverifi</h4>
 </div>
 
@@ -27,13 +25,9 @@
 </p>
 
 ### Table of Contents
-* [Features](#features)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-
-#### Features
-
 
 #### Installation
 
@@ -47,9 +41,29 @@ $ pip install truverifi
 
 ```python
 >>> import truverifi
+>>> client = truverifi.API("<YOUR_API_KEY>")
+>>> client.account()
+{
+  "balance": 2,
+  "username": "example@test.com",
+  "transactions": [
+    {
+      "id": 69,
+      "amount": -1,
+      "timestamp": "2018-07-07T19:30:00Z",
+      "description": "Number change to: 111-222-3333"
+    }
+  ]
+}
+
+>>> client.line()
+
+>>> zip, services = 12345, ["FACEBOOK", "TWITTER"]
+>>> client.checkService(services, zip)
+>>> client.lineChangeService(services, zip)
+
+>>> client.lineExtend()
 ```
-
-
 
 #### License
 
