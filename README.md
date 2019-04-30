@@ -1,7 +1,5 @@
 <div align="center">
-    <div style="background-color: #000">
-      <img src="https://app.truverifi.com/img/truverifi-logo.png" width="250">
-    </div>
+    <img src=".github/assets/truverifi-logo.png" width="250">
     <h4>Python client library for truverifi</h4>
 </div>
 
